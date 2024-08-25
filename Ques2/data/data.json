@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "first_name": "Nelle",
+        "last_name": "Waliszewski",
+        "email": "nwaliszewski0@ucoz.ru",
+        "gender": "Female",
+        "ip_address": "245.133.47.21"
+    },
+    {
+        "id": 2,
+        "first_name": "Noble",
+        "last_name": "Tregian",
+        "email": "ntregian1@nature.com",
+        "gender": "Male",
+        "ip_address": "132.193.94.184"
+    },
+    {
+        "id": 3,
+        "first_name": "Nikolaus",
+        "last_name": "Waistall",
+        "email": "nwaistall2@mac.com",
+        "gender": "Male",
+        "ip_address": "216.168.249.3"
+    },
+    {
+        "id": 4,
+        "first_name": "Cathy",
+        "last_name": "Bricksey",
+        "email": "cbricksey3@reference.com",
+        "gender": "Agender",
+        "ip_address": "87.6.155.60"
+    },
+    {
+        "id": 5,
+        "first_name": "Lennard",
+        "last_name": "Midgely",
+        "email": "lmidgely4@dell.com",
+        "gender": "Male",
+        "ip_address": "185.147.148.207"
+    },
+    {
+        "id": 6,
+        "first_name": "Nicola",
+        "last_name": "Geaney",
+        "email": "ngeaney5@geocities.jp",
+        "gender": "Male",
+        "ip_address": "143.180.196.27"
+    },
+    {
+        "id": 7,
+        "first_name": "Iolande",
+        "last_name": "Bartaletti",
+        "email": "ibartaletti6@sina.com.cn",
+        "gender": "Female",
+        "ip_address": "95.224.82.57"
+    },
+    {
+        "id": 8,
+        "first_name": "Celina",
+        "last_name": "Rime",
+        "email": "crime7@yahoo.co.jp",
+        "gender": "Female",
+        "ip_address": "145.97.242.187"
+    },
+    {
+        "id": 9,
+        "first_name": "Simonette",
+        "last_name": "Brockton",
+        "email": "sbrockton8@topsy.com",
+        "gender": "Female",
+        "ip_address": "158.139.233.119"
+    },
+    {
+        "id": 10,
+        "first_name": "Deane",
+        "last_name": "Daal",
+        "email": "ddaal9@amazon.com",
+        "gender": "Female",
+        "ip_address": "26.68.66.195"
+    }
+]
