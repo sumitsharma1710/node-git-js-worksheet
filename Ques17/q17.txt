@@ -1,0 +1,18 @@
+The below Steps need to be followed in order to remove the .env file from everywhere
+
+1. Add the .env file in the gitignore file in your local system
+2. Now run the following command - 
+       "git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch .env" HEAD"
+
+    Explanation of the above command : 
+
+        --> git filter-branch: This Git command allows us to rewrite the history of our repository.
+        --> --index-filter: This option specifies a command to filter the index (staging area) of each commit.
+        --> git rm -rf --cached: This removes the .env file from the index (staging area) but not from the working directory.
+        --> --ignore-unmatch: This option makes the command ignore errors if the file is not found in some commits.
+        --> HEAD: This specifies that the filtering should apply to the current branch from the latest commit (HEAD).
+
+3. git push --force
+
+After rewriting the commit history, you need to force-push the changes to your remote repository. 
+This command will overwrite the remote history with your local rewritten history.
