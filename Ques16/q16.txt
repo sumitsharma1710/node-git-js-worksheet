@@ -1,0 +1,30 @@
+Git Merging strategies are - 
+
+1. Fast-Forward Merge
+
+A fast-forward merge occurs when the branch being merged has commits that are directly ahead of the target branch with no divergent commits. 
+Git simply moves the target branch pointer forward to the latest commit of the source branch.
+
+
+2. Three-Way Merge Or Recursive Merge
+
+A three-way merge occurs when there are divergent changes between the branches. 
+Git creates a new merge commit that combines the changes from both branches. 
+This strategy is used when the branches have a common ancestor and have diverged.
+
+3. Squash Merge
+
+Squash merging takes all the commits from the source branch and combines them into a single commit that is then applied to the target branch. 
+This is useful for keeping the history clean by combining multiple commits into a single logical change.
+
+4. Rebase Merge
+
+
+Rebasing involves moving or combining a sequence of commits to a new base commit. 
+This results in a linear history by replaying the commits from the feature branch onto the target branch. 
+This is often used to maintain a clean history.
+
+5. Ours Merge
+ 
+The "ours" merge strategy is used to resolve conflicts by always favoring the current branch’s changes over the incoming branch’s changes. 
+The result is a merge commit that contains the current branch’s changes but ignores the incoming branch’s changes.
