@@ -1,0 +1,16 @@
+We can use git reflog command which shows the history of all actions related to branch movements, 
+including commit hashes and changes. We can use this command to find the commit hashes related to the deleted branch. 
+Look for entries that represent the commits you want to recover.
+
+Steps to be followed to recover the deleted branch are -
+
+--> git reflog
+There are two case :
+    1. If the deleted branch contained multiple commits and you want to recover the entire branch, create a new branch from the specific commit
+
+--> git checkout -b <branch-name> <git-commit-SHA>
+
+    2. If you only need to recover specific commits from the deleted branch rather than the entire branch, we can use git cherry-pick
+
+--> git checkout <branch-name>
+--> git cherry-pick <git-commit-SHA>
