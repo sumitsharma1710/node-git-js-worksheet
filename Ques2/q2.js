@@ -11,6 +11,7 @@ async function combineDataSources(filePaths, apiUrls) {
       const fileData = JSON.parse(fileContent);
       mergedData = { ...mergedData, ...fileData };
     } catch (error) {
+      // Here catch block is used to catch those file which cannot be readed while traversing through files array
       console.log(`Error occurred while reading file ${filePath}: ${error.message}`);
     }
   }
@@ -22,6 +23,7 @@ async function combineDataSources(filePaths, apiUrls) {
       const apiData = response.data;
       mergedData = { ...mergedData, ...apiData };
     } catch (error) {
+      // Here catch block is used to catch those api urls which cannot be give data back while traversing through the api array
       console.error(`Error details: ${error.message}`);
     }
   }
