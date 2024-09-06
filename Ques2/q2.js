@@ -2,20 +2,22 @@ const fs = require('fs').promises;
 const axios = require('axios');
 
 async function combineDataSources(filePaths, apiUrls) {
+  // Here deifined an empty object to store all the data 
   let mergedData = {};
 
-  // Read data from files
+  // Read data from array of files
   for (const filePath of filePaths) {
     try {
       const fileContent = await fs.readFile(filePath, 'utf8');
       const fileData = JSON.parse(fileContent);
       mergedData = { ...mergedData, ...fileData };
     } catch (error) {
+      // Here I have used catch block because in case a file from multiple files is not readable so that will be console logged and the array will continue looping for the other files . 
       console.log(`Error occurred while reading file ${filePath}: ${error.message}`);
     }
   }
 
-  // Fetch data from APIs
+  // Fetch data from array of APIs
   for (const url of apiUrls) {
     try {
       const response = await axios.get(url);

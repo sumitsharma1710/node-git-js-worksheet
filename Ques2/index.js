@@ -4,6 +4,7 @@ const app = express();
 
 app.get('/', async (req, res) => {
   try {
+    // Here I have used the try catch block because in case the q2.js which contain the combinedDataSources and filepaths and apiURLs not able to fetch data for which we are awiting the changes .
     const data = await combineDataSources(filePaths, apiUrls);
     console.log(data);
     res.json({ data });
