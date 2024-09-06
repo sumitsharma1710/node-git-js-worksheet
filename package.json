@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./Ques6/q6.js"
+    "start": "nodemon ./Ques2/index.js"
   },
   "keywords": [],
   "author": "",
