@@ -1,0 +1,6 @@
+//To reconstruct the commit history we can use rebase 
+
+Let's assume the last 10 commits need to be restructured. 
+
+--> git rebase -i HEAD~10
+

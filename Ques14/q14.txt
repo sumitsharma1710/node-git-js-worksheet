@@ -1,0 +1,35 @@
+// We can follow the below structure to efficently manage the real time application and with the three environments as everything Mentioned below
+
+1. Main Branches:
+   - `main`: Represents the production-ready state.
+   - `develop`: The main development branch where features are integrated.
+
+2. Supporting Branches:
+   - Feature branches
+   - Release branches
+   - Hotfix branches
+
+3. Feature Development:
+   - Create a new feature branch from `develop`: `feature/feature-name`
+   - Develop the feature in this branch
+   - When complete, create a pull request to merge back into `develop`
+   - After code review, merge the feature branch into `develop`
+
+4. Release Process:
+   - When `develop` has enough features for a release, create a release branch: `release/vX.Y.Z`
+   - This branch is deployed to the staging environment for testing
+   - Bug fixes related to the release are made directly in this branch
+   - Once stable, merge the release branch into both `main` and `develop`
+   - Tag the merge in `main` with the version number
+
+5. Hotfix Process:
+   - For critical bugs in production, create a hotfix branch from `main`: `hotfix/bug-description`
+   - Fix the bug in this branch
+   - Once fixed, merge the hotfix into both `main` and `develop`
+   - Tag the merge in `main` with an updated version number
+
+
+6. Environment Management:
+   - Development: The `develop` branch is continuously deployed to the dev environment
+   - Staging: Release branches are deployed to the staging environment for testing
+   - Production: The `main` branch is deployed to the production environment
